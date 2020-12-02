@@ -1,0 +1,1 @@
+puts File.read('input.txt').split("\n").map(&:to_i).permutation(2).find { |(a, b)| a + b == 2020 }.reduce(:*)
